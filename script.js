@@ -7,8 +7,24 @@ if(nome === '' || nome === null){
   area.innerHTML = "clique no botao para acessar..."
 }
 else{
-  area.innerHTML = "bem vido " + nome;
+  area.innerHTML = "bem vido " + nome + " ";
+
+  let botaoSair = document.createElement("button");
+botaoSair.innerText = "Sair da conta";
+botaoSair.onclick = sair;
+
+area.appendChild(botaoSair);
+
+
 }
 
+
+}
+
+
+function sair(){
+alert("ate mais");
+
+area.innerHTML = "voce saiu"
 
 }
