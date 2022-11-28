@@ -28,3 +28,27 @@ alert("ate mais");
 area.innerHTML = "voce saiu"
 
 }
+
+function mediaAluno(nota1, nota2){
+var media = (nota1 + nota2) / 2;
+
+if (media >= 7){
+  console.log("aluno aprovado:" + media)
+}else if(media < 7){
+  console.log("aluno reprovado por media:" + media)
+}
+
+
+
+
+
+
+
+}
+
+function aluno(nome, curso){
+var mensagem = "bem vindo " + nome + " ao curso de " + curso;
+
+console.log(mensagem);
+
+}
