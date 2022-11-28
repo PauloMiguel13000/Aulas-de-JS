@@ -50,11 +50,44 @@ console.log(mensagem);
 */
 
 /*
+//
+O toString converte um array em uma string de valores(separados por virgula.)
+
+var frutas = ['Uva','Amora',"Maca"];
+var converter = frutas.toString();
+
+"Uva","Amora","Maca" - "Uva,Amora,Maca"
+
+//
+
+O join separa os itens no array com o que voce escolher
+
 var times = ["Sao Paulo", "Palmeiras", "Vitoria", "Bahia"];
 var separar = times.join("/");
-*/
-/*
+--------------------------------
 var Paises = ["Brasil", "Argentina", "Mexico", "China"];
-
 var separar = Paises.join("?");
 */
+
+/*
+//ELementos a um array: push() e unshift()
+Push: adiciona um novo elemento no fim do Array
+
+var times = ["Bahia","Vitoria","Fluminense"];
+
+var lista = times.push("Flamengo");
+----------------------
+var times = ["Bahia","Vitoria","Fluminense","Brasil"];
+
+var adicionar = times.push("Grecia","atletico mineiro");
+
+//
+
+unshift: adiciona no inicio
+
+var times = ["BRA","MXC","EUA"];
+
+var modifica = times.unshift("GRC");
+
+*/
+
