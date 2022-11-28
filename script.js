@@ -28,7 +28,7 @@ alert("ate mais");
 area.innerHTML = "voce saiu"
 
 }
-
+//Media
 function mediaAluno(nota1, nota2){
 var media = (nota1 + nota2) / 2;
 
