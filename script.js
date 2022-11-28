@@ -1,3 +1,4 @@
+/*
 var area = document.getElementById('area')
 function entrar(){
  var nome = prompt("Digite seu nome");
@@ -38,12 +39,6 @@ if (media >= 7){
   console.log("aluno reprovado por media:" + media)
 }
 
-
-
-
-
-
-
 }
 
 function aluno(nome, curso){
@@ -52,3 +47,14 @@ var mensagem = "bem vindo " + nome + " ao curso de " + curso;
 console.log(mensagem);
 
 }
+*/
+
+/*
+var times = ["Sao Paulo", "Palmeiras", "Vitoria", "Bahia"];
+var separar = times.join("/");
+*/
+/*
+var Paises = ["Brasil", "Argentina", "Mexico", "China"];
+
+var separar = Paises.join("?");
+*/
