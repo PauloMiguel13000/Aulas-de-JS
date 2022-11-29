@@ -89,5 +89,37 @@ var times = ["BRA","MXC","EUA"];
 
 var modifica = times.unshift("GRC");
 
+//POP elimina o ultimo, shift o primeiro
+
+var estado = ["SP","BA","RJ"];
+
+var remove = estado.pop();
+
+-------
+
+var times = ["Bahia","SP","Vitoria"];
+var remover = times.shift();
+
+// concat mescla os arrays
+
+var cachorro = ["Rafa","Pingo","Latiane"];
+
+var gato = ["Gatiane", "Marcia", "Gatosa"];
+
+var mesclar = cachorro.concat(gato);
+
+----
+
+var rua = ["Santo Inacio", "Rua Angelica", "Cajazeiras"];
+
+var paises = ["Brasil", "Alemanha", "Italia"];
+
+var juntar = rua.concat(paises);
+
 */
 
+var rua = ["Santo Inacio", "Rua Angelica", "Cajazeiras"];
+
+var paises = ["Brasil", "Alemanha", "Italia"];
+
+var juntar = rua.concat(paises);
