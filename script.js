@@ -148,5 +148,51 @@ document.write("<br> valor do a é:" + a)
 
 }
 
+//switch serve para casos
+
+function pedir(){
+var valor = prompt("digite um valor de 1 a 4");
+
+switch(Number(valor)){
+case 1:
+alert("numero 1, suco");
+break;
+case 2:
+  alert("numero 2, agua");
+  break;
+case 3:
+  alert("numero 3,sorvete");
+break;
+case 4:
+  alert("chamar o garcom");
+break;
+default:
+  alert("escolha entre 1 a 4");
+  break;
+}
+
+}
+--
+com nomes
+
+function pedir(){
+var valor = prompt("digite um valor de 1 a 4");
+
+switch(valor){
+case 'mateus':
+  alert("voce chamou Mateus");
+  break;
+  case 'Lucas':
+    alert("voce chamou lucas");
+    break;
+    default:
+      alert("ola fulanos");
+      break;
+
+}
+}
+
 */
+
+//switch
 
