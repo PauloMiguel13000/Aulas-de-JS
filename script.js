@@ -81,6 +81,12 @@ var times = ["Bahia","Vitoria","Fluminense","Brasil"];
 
 var adicionar = times.push("Grecia","atletico mineiro");
 
+---
+
+var quests = ["Limpar a casa", "Ir ao mercado", "Comprar picole"];
+
+var add = quests.push("Studying JavaScript", "go to the fair", "Create apps");
+
 //
 
 unshift: adiciona no inicio
@@ -116,10 +122,31 @@ var paises = ["Brasil", "Alemanha", "Italia"];
 
 var juntar = rua.concat(paises);
 
+
+var x = 0;
+
+// while = enquanto
+
+while(x < 10){
+
+  document.write("<br> O valor do x é:" + x);
+
+  // aumentando o valor do x
+
+  x ++;
+
+  // For = para
+
+var valor = 15;
+
+for(a = 0; a < valor; a++){
+// o que tiver aqui vai ser exect
+
+document.write("<br> valor do a é:" + a)
+
+}
+
+}
+
 */
 
-var rua = ["Santo Inacio", "Rua Angelica", "Cajazeiras"];
-
-var paises = ["Brasil", "Alemanha", "Italia"];
-
-var juntar = rua.concat(paises);
