@@ -1,3 +1,89 @@
+////////////////////////Calculo IMC
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+<form onsubmit="return calcular(event)">
+<label for="">Digite seu peso</label>
+<br>
+<input type="text" name="peso" id="peso"
+placeholder="Exemplo 60"/>
+<br>
+<br>
+
+<label for="">Digite sua altura</label>
+<br>
+<input type="text" name="altura" id="altura"
+placeholder="Exemplo 1.75"/>
+<br>
+<br>
+<input type="submit" value="Calcular IMC" name="" id="">
+
+</form>
+
+<div id="resultado"></div>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
+-
+//JS
+
+var peso;
+var altura;
+var imc;
+var resultado;
+
+function calcular(event){
+  event.preventDefault();
+
+peso = document.getElementById('peso').value;
+
+altura = document.getElementById('altura').value;
+
+imc = peso / (altura * altura);
+
+resultado = document.getElementById('resultado');
+if(imc < 17){
+
+
+resultado.innerHTML = '<br/> Seu resultado foi:' + imc + '<br/> Cuidado, esta muito abaixo do peso!'
+
+} else if(imc > 17 && imc <= 18.49){
+
+  resultado.innerHTML = '<br/> Seu resultado foi:' + imc + '<br/> Cuidado, esta abaixo do peso!'
+
+
+} else if(imc >= 18.5 && imc < 24.99 ){
+
+
+resultado.innerHTML = '<br/> Seu resultado foi:' + imc.toFixed(2) + '<br/> Esta com o peso normal!'
+
+} else if(imc >= 25 && imc < 29.99){
+
+
+  resultado.innerHTML = '<br/> Seu resultado foi' + imc.toFixed(2) + '<br/> Esta acima do peso'
+
+}else if (imc >= 30){
+
+
+  resultado.innerHTML = '<br/> Seu resultado foi:' + imc.toFixed(2) + '<br/> Esta com obesidade'
+}
+
+document.getElementById('peso').value = '';
+document.getElementById('altura').value = '';
+
+
+}
+///////////////////////
+
 /*
 var area = document.getElementById('area')
 function entrar(){
@@ -248,5 +334,3 @@ document.getElementById('altura').value = '';
 
 }
 */
-
-

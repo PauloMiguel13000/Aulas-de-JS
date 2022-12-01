@@ -8,15 +8,26 @@
   <title>Document</title>
 </head>
 <body>
-<h1>Escolha um item</h1>
-<ul>
-  <li>1 - suco</li>
-  <li>2 - agua</li>
-  <li>3 - sorvete</li>
-  <li>4 - chamar o garcom</li>
-</ul>
 
-<button onclick="pedir()">Pedir</button>
+<form onsubmit="return calcular(event)">
+<label for="">Digite seu peso</label>
+<br>
+<input type="text" name="peso" id="peso"
+placeholder="Exemplo 60"/>
+<br>
+<br>
+
+<label for="">Digite sua altura</label>
+<br>
+<input type="text" name="altura" id="altura"
+placeholder="Exemplo 1.75"/>
+<br>
+<br>
+<input type="submit" value="Calcular IMC" name="" id="">
+
+</form>
+
+<div id="resultado"></div>
 
   <script src="script.js">
   </script>
