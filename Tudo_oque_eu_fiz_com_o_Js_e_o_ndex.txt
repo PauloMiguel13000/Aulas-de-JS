@@ -333,4 +333,42 @@ document.getElementById('altura').value = '';
 
 
 }
+
+//setInterval
+
+function acao(){
+
+document.write("Execultando... <br/>")
+
+}
+
+var timer = setInterval(() => {
+  document.write("Execultando!!! <br/>")
+
+}, 1000)
+
+
+//setTimeout
+
+
+function acao(){
+
+document.write("Execultando... <br/>")
+
+}
+
+setTimeout(() =>{
+console.log("Execultado");
+
+}, 3000);
+
+
+
+
+
+
+
+
+
+
 */
