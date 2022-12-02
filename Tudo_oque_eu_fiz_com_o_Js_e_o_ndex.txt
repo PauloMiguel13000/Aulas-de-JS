@@ -365,9 +365,50 @@ console.log("Execultado");
 
 
 
+//var, let e const
 
 
+var nome = "Sujeito"
 
+
+if(nome == "Sujeito"){
+
+  var curso = "Programandor front";
+
+  console.log(curso);
+}
+
+let bonus = true;
+
+if(bonus){
+var salario = 3000 + 500;
+console.log("salario : " +salario);
+}
+
+
+//LET SO ACESSA DENTRO DO SEU ESCOPO
+
+var nome = "Sujeito";
+
+if(nome === "Sujeito"){
+
+let cargo = "Ceo do sujeito programador"
+
+console.log(cargo);
+}
+
+cargo = "Nenhum cargo"
+
+--
+
+let bonus = true;
+
+if(bonus){
+let salario = 4000 + 600;
+console.log(salario);
+}
+
+//
 
 
 
