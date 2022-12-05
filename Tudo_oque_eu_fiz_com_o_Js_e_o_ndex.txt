@@ -410,6 +410,120 @@ console.log(salario);
 
 //
 
+//Objetos
+
+let pessoa ={
+nome: "Miguel",
+idade: 26,
+altura: 1.85,
+cargo: "programer full stack",
+
+};
+
+let carro = {
+nome: "Golfe",
+cor: "branco",
+potencia: "6 cavalos",
+}
+
+console.log(carro);
+
+let usuarios =[
+{nome: "Miguel", cargo:"Dev", status:"Ativo"},
+{nome: "Maria", cargo: "Dev", status:"Ativo"},
+{nome:"Jose", cargo: "RH", status:"Ativo"}
+
+];
+
+console.log(usuarios);
+
+//Template strings
+
+``A crase faz com que facilite inserir variavel
+
+let nome = "Miguel";
+let sobrenome = "Souza";
+let idade = 22;
+
+//let mensagem = "Meu nome é " + nome + " " + sobrenome + " e tenho " + idade + " anos";
+
+let mensagem = `Meu nome é ${nome} ${sobrenome} e eu tenho ${idade} anos de idade`
+
+console.log(mensagem);
+
+
+//Projeto de tarefas
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tarefas - JS</title>
+</head>
+<body>
+<div id="app">
+
+  <input type="text" placeholder="digite uma tarefa" name="" id="">
+
+  <button>registrar</button>
+<ul>
+
+
+
+</ul>
+
+</div>
+
+
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
+
+
+//JS
+
+let listElement = document.querySelector("#app ul");
+let inputElement = document.querySelector("#app input");
+let buttonElement = document.querySelector("#app button");
+
+
+let tarefas = [];
+
+function renderTarefas(){
+listElement.innerHTML = "";
+
+tarefas.map((todo) =>{
+let liElement = document.createElement("li");
+let tarefaText = document.createTextNode(todo);
+liElement.appendChild(tarefaText);
+listElement.appendChild(liElement);
+
+
+})
+
+}
+
+function adicionarTarefas(){
+if(inputElement.value === ''){
+alert('digite algo');
+return false;
+
+}else{
+let novaTarefa = inputElement.value;
+tarefas.push(novaTarefa);
+inputElement.value = '';
+
+renderTarefas();
+}
+
+}
+
+buttonElement.onclick = adicionarTarefas;
+
 
 
 */
