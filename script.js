@@ -1,36 +1,38 @@
-//desconstruir array de objetos
+//Spread Operator
 /*
+let primeiros = [1,2,3];
+
+let numeros = [...primeiros,4,5,10];
+console.log(numeros)
+
+
 let pessoa = {
 
   nome: "Miguel",
-  sobrenome: "Souza",
-  empresa: "Sujeito programador",
-  cargo: "programador FullStack",
+  idade: 45,
+  cargo: "RH",
 }
-*/
-//console.log(pessoa.nome);
-//console.log(pessoa.cargo);
-/*
-let nome = "teste";
 
-const {nome:nomePessoa, cargo, empresa, sobrenome} = pessoa;
+let novaPessoa = {
+  ...pessoa,
+status:"Ativo",
+cidade: "campo grando/ ms",
+telefone: "9999999"
+};
+console.log(novaPessoa);
 
-console.log("nome da pessoa " + nomePessoa);
-console.log(sobrenome);
-console.log(cargo);
-console.log(empresa);
-*/
-//=================================
-//desconstruir um array
-/*
-let nomes = ["Miguel","Lucas","Henrique"];
+function novoUsuario(info){
+let data = {
+...info,
+status: "Ativo",
+inicio: "20 do 10",
+codigo: "1213144",
 
-let {0:Miguel, 2:terceirapessoa} = nomes;
-console.log(Miguel);
-console.log(terceirapessoa)
-*/
-/*
-let [primeironome,segundonome] = nomes;
- console.log(segundonome);
- console.log(primeironome);
+};
+
+console.log(data);
+
+}
+
+novoUsuario({nome:"Miguel", sobrenome:"Souza", cargo:"Dev"});
 */
