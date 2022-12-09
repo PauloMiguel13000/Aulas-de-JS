@@ -1,23 +1,30 @@
-//Rest operator.
+//MAP = percorrer um todo um array
 /*
-function convidados(...nome){
-  console.log("Seja bem vindo, todos convidados")
-console.log(nome);
-}
-
-convidados("Marcos","Lucas","Maria","Ana");
+let lista =["Miguel","Jose","Maria","Lucas"];
 
 
-function sorteador(...numeros){
-console.log(numeros);
-
-const numeroGerado = Math.floor(Math.random() * numeros.length);
-console.log("Numero gerado foi: " + numeros[numeroGerado]);
+lista.map((item, index) => {
+console.log(`passando: ${item} - Esta na posicao ${index} ` )
 
 
-}
-
-sorteador(1,2,3,4,5,6,7,8,9,10,34,45,56);
-
-
+})
 */
+
+// Reduce = busca reduzir um array
+
+let numeros = [5, 3, 2, 5];
+
+let total = numeros.reduce((acumulador, numero, indice, original) => {
+
+  console.log(`${acumulador} - total ate o momento`);
+  console.log(`${numero} - valor atual`);
+  //console.log(`${indice} - indice atual`);
+  //console.log(`${original} - array original`);
+
+  console.log("========")
+  return acumulador += numero;
+
+})
+
+
+console.log("total do reduce: " + total)
