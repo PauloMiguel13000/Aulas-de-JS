@@ -1,30 +1,22 @@
-//MAP = percorrer um todo um array
-/*
-let lista =["Miguel","Jose","Maria","Lucas"];
+// Find
 
+let listagem = [5,6,"Jose",2,"Mateus", "Jose"];
 
-lista.map((item, index) => {
-console.log(`passando: ${item} - Esta na posicao ${index} ` )
-
-
-})
-*/
-
-// Reduce = busca reduzir um array
-
-let numeros = [5, 3, 2, 5];
-
-let total = numeros.reduce((acumulador, numero, indice, original) => {
-
-  console.log(`${acumulador} - total ate o momento`);
-  console.log(`${numero} - valor atual`);
-  //console.log(`${indice} - indice atual`);
-  //console.log(`${original} - array original`);
-
-  console.log("========")
-  return acumulador += numero;
+let busca = listagem.find((item) =>{
+return item === "Jose";
 
 })
 
+console.log(busca)
 
-console.log("total do reduce: " + total)
+// filter
+
+let palavras = ["Matheus","Ana","Jose", "Ricardo Silva", "Sujeito Programador","Jose"];
+
+let resultado = palavras.filter((item)=>{
+
+return item === "Jose";
+
+})
+console.log(resultado)
+
